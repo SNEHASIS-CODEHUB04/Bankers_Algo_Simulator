@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Banker's Algorithm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css">
+        <script src="banker.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+			<a class="active" href="#home">Home</a>
+			<a href="analysis.html">Analysis</a>
+			<a href="complexity.html">Complexity</a>
+			<a href="about.html">About</a>
+		  </div>
+        <br>
+				<main class="main-cont">
+					<!-- Total Instance Form Starts -->
+					<div class="input-cont">
+					  <div class="proc-res-input">
+						<div class="">
+						  <label for="numProcesses">No. of Processes: </label>
+						  <input name="numProcesses" type="number" min="1" max="5" class="" id="numProcesses" required>
+						</div>
+						<div class="">
+						  <label for="numResources">No. of Resources: </label>
+						  <input name="numResources" type="number" min="1" max="3" class="" id="numResources" required>
+						</div>
+					  </div>
+				
+					  <div class="res-inst-input">
+						<!-- Input for No. of Instance of each resource -->
+					  </div>
+					</div>
+					<!-- Total Instance Form Ends -->
+					<div class="matrices-cont" id="matricesCont">
+				
+					</div>
+				
+					<!-- Algo Buttons Starts -->
+					<div class="action-btns">
+					  <button type="button" class="" onclick="example()">Load Sample</button>
+					  <button type="button" class="" onclick="generateMatrices()">Generate Matrices</button>
+					  <button type="button" class="" onclick="run_algorithm()">Generate Sequence</button>
+					  <button type="button" class="" onclick="reset()">Reset Matrices</button>
+					</div>
+					<!-- Algo Buttons Ends -->
+				
+					<!-- Process Sequence Starts -->
+					<div class="proc-seq-chart">
+						<h4>Process Sequence :</h4>
+						<div class="proc-seq">
+						  <!-- Processes -->
+						</div>
+					  </div>
+					</div>
+					<div class="alert-msg"></div>
+					<!-- Process Sequence Ends -->
+				  </main>
+	</body>
+</html>
